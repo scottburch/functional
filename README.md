@@ -78,4 +78,9 @@ Not really...  We just change the monad returned from greeting() to a Promise.
         function enthusiastic(v) {
             return F.Identity(v + '!!!');
         }
+
+#### It's too easy.  That can't work.
+<http://jsfiddle.net/886753x7/4/>
+
+
 ### More docs to come
