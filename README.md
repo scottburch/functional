@@ -2,8 +2,10 @@
 
 An attempt to create a simple functional programming library with monads.
 
-This library started with Douglas Crockford's code used in his talk "Monads and Gonads"
+This library started with Douglas Crockford's code used in his excellent talk "Monads and Gonads"
 <https://www.youtube.com/watch?v=b0EF0VTs9Dc>
+
+As always, feedback is very welcome.
 
 ## monads
 * base (used to create other monads)
@@ -62,7 +64,7 @@ what we are going to do?  Easy! Simply have your functions return a monad and us
     }
 
 Uh Oh.  The requirement says that we have to get the greeting through ajax.  Now we need to refactor all of our code, right?
-Not really...  We just change the monad returned from greeting to a Promise.
+Not really...  We just change the monad returned from greeting() to a Promise.
 
         var Person = F.MONAD();
         Person('Scott').bind(greeting).bind(enthusiastic).bind(alert);      // Hello Scott!!! (one second later)
