@@ -48,8 +48,7 @@ Here we will use the lift() method to compose behavior with a "Person" monad usi
 
 
 But, what if we want to be able to combine our functions in arbitrary ways. Without knowing in advance
-what we are going to do?  Easy, simply have your functions return a monad and use bind(). For ease, we will
-return use the Identity monad.
+what we are going to do?  Easy! Simply have your functions return a monad and use bind().
 
     Person = F.MONAD();
     Person('Scott').bind(greeting).bind(enthusiastic).bind(alert);      // Hello Scott!!!
@@ -66,7 +65,7 @@ Uh Oh.  The requirement says that we have to get the greeting through Ajax.  Now
 Not really...  We just change the monad returned from greeting to a Promise.
 
         var Person = F.MONAD();
-        Person('Scott').bind(greeting).bind(enthusiastic).bind(alert);      // Hello Scott!!!
+        Person('Scott').bind(greeting).bind(enthusiastic).bind(alert);      // Hello Scott!!! (one second later)
 
         function greeting(v) {
             var prom = F.Promise();
