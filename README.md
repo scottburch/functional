@@ -19,7 +19,7 @@ This library started with Douglas Crockford's code used in his talk "Monads and 
 
 ## Intro to the monads
 
-In this library a monad is a immutable wrapper around a value.
+In this library a monad is a wrapper around an immutable value.
 To access the value of a monad you must pass a function to the .bind() method.
 
 Simplest Example:
@@ -30,7 +30,7 @@ Simplest Example:
 
 
 
-Monads can be used to compose behavior in a reusable and flexible way by providing a common interface.
+Monads can be used to compose behavior in reusable and flexible ways by providing a common interface.
 Here we will use the lift() method to compose behavior with a "Person" monad using regular functions.
 
     Person = F.MONAD().lift(greeting).lift(enthusiastic);
@@ -47,7 +47,7 @@ Here we will use the lift() method to compose behavior with a "Person" monad usi
     }
 
 
-But, what if we want to be able to combine our functions in arbitrary ways. Without knowing in advance
+But, what if we want to be able to combine our functions in arbitrary ways, without knowing in advance
 what we are going to do?  Easy! Simply have your functions return a monad and use bind().
 
     Person = F.MONAD();
@@ -61,7 +61,7 @@ what we are going to do?  Easy! Simply have your functions return a monad and us
         return F.Identity(v + '!!!');
     }
 
-Uh Oh.  The requirement says that we have to get the greeting through Ajax.  Now we need to refactor all of our code, right?
+Uh Oh.  The requirement says that we have to get the greeting through ajax.  Now we need to refactor all of our code, right?
 Not really...  We just change the monad returned from greeting to a Promise.
 
         var Person = F.MONAD();
