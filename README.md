@@ -19,7 +19,7 @@ This library started with Douglas Crockford's code used in his talk "Monads and 
 
 ## Intro to the monads
 
-In this library a monad is typically an immutable wrapper around a value.
+In this library a monad is a immutable wrapper around a value.
 To access the value of a monad you must pass a function to the .bind() method.
 
 Simplest Example:
