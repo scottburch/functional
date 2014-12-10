@@ -80,7 +80,7 @@ Not really...  We just change the monad returned from greeting() to a Promise.
         }
 
 #### It's too easy.  That can't work.
-<http://jsfiddle.net/886753x7/4/>
+<http://jsfiddle.net/886753x7/5/>
 
 
 ### More docs to come
