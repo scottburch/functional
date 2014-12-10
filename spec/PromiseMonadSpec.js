@@ -19,4 +19,15 @@ describe('F.Promise monad', function() {
         prom.resolve(10);
         expect(bindSpy).toHaveBeenCalledWith(10);
     });
+
+    it('should chain with bind', function() {
+        prom.bind(chainX).bind(chainX).bind(chainX).bind(bindSpy);
+        expect(bindSpy).not.toHaveBeenCalled();
+        prom.resolve('y');
+        expect(bindSpy).toHaveBeenCalledWith('yxxx');
+    });
+
+    function chainX(v) {
+        return F.Identity(v+'x');
+    }
 });
