@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script src="../vendor/lodash.js"></script>
+    <script src="../src/base.js"></script>
+    <script src="../src/monad.js"></script>
+    <script src="../src/identity.js"></script>
+    <script src="../src/promise.js"></script>
+</head>
+<body>
+    <script>
+        var Person = F.MONAD();
+        var x = Person('Scott').bind(greeting).bind(enthusiastic).bind(alert);      // Hello Scott!!!
+        var y = 10;
+
+        function greeting(v) {
+            var prom = F.Promise();
+            setTimeout(prom.resolve.bind(undefined, 'Hello ' + v),1000);
+            return prom;
+        }
+
+        function enthusiastic(v) {
+            return F.Identity(v + '!!!');
+        }
+    </script>
+</body>
+</html>

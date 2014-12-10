@@ -86,6 +86,11 @@ F.MONAD = function(modifier) {
         return unit;
     };
     unit.lift = function (name, func) {
+        if(func === undefined) {
+            func = name;
+            name = func.name;
+            console.log(func.name);
+        }
 
 // Add a method to the prototype that calls bind with the func. If the value
 // returned by the func is not a monad, then make a monad.
