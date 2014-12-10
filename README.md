@@ -15,3 +15,5 @@ This library started with Douglas Crockford's code used in his talk "Monads and 
 
 ## functions
 * autocurry
+
+### More docs to come
