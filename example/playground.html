@@ -1,15 +1,14 @@
 <html>
 <head>
     <script src="../vendor/lodash.js"></script>
-    <script src="../src/base.js"></script>
-    <script src="../src/monad.js"></script>
-    <script src="../src/identity.js"></script>
-    <script src="../src/promise.js"></script>
+    <!--script src="../build/functional.min.js"></script-->
+    <script src="http://rawgit.com/scottburch/functional/master/build/functional.min.js"></script>
 </head>
 <body>
+    <div id="output"></div>
     <script>
         var Person = F.MONAD();
-        var x = Person('Scott').bind(greeting).bind(enthusiastic).bind(alert);      // Hello Scott!!!
+        var x = Person('Scott').bind(greeting).bind(enthusiastic).bind(output);      // Hello Scott!!!
         var y = 10;
 
         function greeting(v) {
@@ -20,6 +19,10 @@
 
         function enthusiastic(v) {
             return F.Identity(v + '!!!');
+        }
+
+        function output(value) {
+            document.querySelector('#output').innerHTML = value;
         }
     </script>
 </body>
