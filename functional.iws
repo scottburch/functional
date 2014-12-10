@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04d0bb38-632f-4233-a90e-01b86f962dc7" name="Default" comment="built">
+    <list default="true" id="04d0bb38-632f-4233-a90e-01b86f962dc7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functional.iws" afterPath="$PROJECT_DIR$/functional.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/functional.min.js" afterPath="$PROJECT_DIR$/build/functional.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/promise.js" afterPath="$PROJECT_DIR$/src/promise.js" />
     </list>
     <ignored path="functional.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,8 +82,8 @@
       <file leaf-file-name="functional.min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build/functional.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1276596" vertical-offset="0" max-vertical-offset="990">
-              <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.035460994" vertical-offset="0" max-vertical-offset="423">
+              <caret line="1" column="1397" selection-start-line="1" selection-start-column="1397" selection-end-line="1" selection-end-column="1397" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -93,8 +94,8 @@
       <file leaf-file-name="promise.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/promise.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="555">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,11 +164,11 @@
         <option value="$PROJECT_DIR$/spec/stateSpec.js" />
         <option value="$PROJECT_DIR$/spec/identitySpec.js" />
         <option value="$PROJECT_DIR$/src/monad.js" />
-        <option value="$PROJECT_DIR$/src/promise.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spec/PromiseMonadSpec.js" />
         <option value="$PROJECT_DIR$/example/playground.html" />
         <option value="$PROJECT_DIR$/build/functional.min.js" />
+        <option value="$PROJECT_DIR$/src/promise.js" />
       </list>
     </option>
   </component>
@@ -716,7 +717,8 @@
     <MESSAGE value="added playground and modified promise to chain and added documentation." />
     <MESSAGE value="Small documentation change" />
     <MESSAGE value="built" />
-    <option name="LAST_COMMIT_MESSAGE" value="built" />
+    <MESSAGE value="reformatted min" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformatted min" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1065,14 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/promise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="555">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -1080,14 +1074,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
           <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/PromiseMonadSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1108,10 +1094,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/PromiseMonadSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build/functional.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1276596" vertical-offset="0" max-vertical-offset="990">
-          <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.035460994" vertical-offset="0" max-vertical-offset="423">
+          <caret line="1" column="1397" selection-start-line="1" selection-start-column="1397" selection-end-line="1" selection-end-column="1397" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
