@@ -4,6 +4,6 @@ describe('exec', function() {
     }
 
     it('should execute a method with arguments', function() {
-        expect(F.exec('a')(obj, 'foo')).toBe('foo');
+        expect(F.exec('a', 'foo')(obj)).toBe('foo');
     });
 });
