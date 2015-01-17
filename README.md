@@ -8,7 +8,7 @@ This library started with Douglas Crockford's code used in his excellent talk "M
 As always, feedback is very welcome.
 
 ## monads
-* base (used to create other monads)
+* base (MONAD - used to create monads)
 * Identity
 * Maybe
 * Either
